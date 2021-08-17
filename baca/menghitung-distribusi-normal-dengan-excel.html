@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://1.bp.blogspot.com/-q1hXV76r2pE/YJKe2l9-01I/AAAAAAAAAE8/dqKbm4_8s64-17G5vlywo8hbvkJBLV--QCNcBGAsYHQ/s32/idea.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<script  src="https://pasukan.my.id/ad/head.js" type="text/javascript" ></script>
+	<title>
+        ▷ Menghitung Distribusi Normal Dengan Excel
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#dc3545;--color-accent:#dc354515;--color-bg:#fff;--color-bg-secondary:#c82333;--color-secondary:#c82333;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#ffffff;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #c82333}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Menghitung Distribusi Normal Dengan Excel",
+  "datePublished": "2021-08-12",
+  "image": "https://cdn.slidesharecdn.com/ss_thumbnails/presentasi-bab-09-151011062850-lva1-app6892-thumbnail-4.jpg?cb=1444545099",
+  "publisher": {
+    "@type": "Organization",
+    "name": "makcikimpact",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=menghitung+distribusi+normal+dengan+excel",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{ "@context": "https://schema.org/", 
+"@type": "CreativeWorkSeries", 
+"name": "makcikimpact", "aggregateRating": 
+{ "@type": "AggregateRating", 
+"ratingValue": "4.5", 
+"bestRating": "5", 
+"ratingCount": "857" } }
+</script>
+	<!-- Head tag Code -->
+</script><script type='text/javascript' src='//inquiryclank.com/9e/2b/a7/9e2ba7859749ffcbe541725d70fa9e2d.js'></script>
+
+<script  src="https://pasukan.my.id/go/back_indo.js" type="text/javascript" ></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWR1H8SP53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWR1H8SP53');
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            ▷ Menghitung Distribusi Normal Dengan Excel
+            </a>
+        </h1>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Cari disini...' type='text' name="q" required autocomplete="off" id="search-query">
+            <script  src="https://pasukan.my.id/ad/header.js" type="text/javascript" ></script>        </center>
+    </header>
+    <main>
+        <article>
+    <p><a href="/">menghitung distribusi normal dengan excel</a> - Selamat masuk di website beta. engkau bisa menelusuri tulisan yang sinkron bersama selera kamu karena aku mempunyai pemberitahuan yang terus update bersama ditulis lalu teknik perkataan yang santai serta mudah dipahami semua diri. batang air ini admin hendak berdiskusi artikel dekat-dekat menghitung distribusi normal dengan excel.
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middle.js" type="text/javascript" ></script>
+</center>		
+    <p>Fungsi Excel pertama yang akan kita periksa adalah fungsi NORMSDIST. Ketika suatu populasi mengikuti distribusi normal observasi ter-klaster di sekitar rata-rata aritmetiknya. Fungsi ini sudah digantikan oleh satu atau beberapa fungsi baru yang mungkin lebih akurat dan. Z dan kumulatifArgumen pertama z adalah jumlah deviasi standar dari meanJadi z -15 adalah satu setengah standar deviasi di bawah meanNilai z dari z 2 adalah dua deviasi. Jika perlu Anda bisa menyesuaikan lebar kolom untuk melihat semua.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://cdn.staticaly.com/img/4.bp.blogspot.com/-H90ByeXHYb4/V_KVelywzaI/AAAAAAAABQ0/obMf1vpzTic9fjusurqibA9nWUSt_mPEACLcB/s1600/kurva-normal-z-distribusi-normal-7.png" alt="Menghitung Luas Area Dengan Menggunakan Tabel Z Distribusi Normal Baku" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-g4PmadmiviqTWD0m47FmWnoXPQdfiAJDA';">
+        <figcaption>Menghitung Luas Area Dengan Menggunakan Tabel Z Distribusi Normal Baku from www.rumusstatistik.com</figcaption>
+    </figure>
+        <p>
+							<a href="/baca/sniper-ghost-warrior-2-google-drive.html">sniper ghost warrior 2 google drive</a> Untuk menghitung nilai Z Anda perlu tahu nilai rata-rata μ. Jika x number_s n trials dan p probability_s maka distribusi binomial kumulatif adalah. Fungsi Excel pertama yang akan kita periksa adalah fungsi NORMSDIST. Titik tertinggi dari kurva distribusi normal adalah posisi peluang tertinggi untuk terjadi dan peluang tersebut akan bergerak turun menuju sisi kiri dan sisi kanan titik tertinggi dengan besaran yang sama pada jarak yang sama dari titik tertinggi. ExcelPada artikel ini akan membahas Cara Menghitung Peluang Distribusi kontinu khusus yaitu Normal dan Eksponensial dengan ExcelUntuk definisi dan lainnya dapat diperoleh dari buku-buku. Uji Z adalah salah satu uji statistik yang pengujian hipotesisnya didekati dengan distribusi normalMenurut teori limit terpusat data dengan ukuran sampel yang besar akan berdistribusi normal.
+							</p>
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middlev2.js" type="text/javascript" ></script>
+</center>		
+    <h2>menghitung distribusi normal dengan excel</h2>
+    <p>
+							<a href="/baca/ceramah-santunan-anak-yatim.html">ceramah santunan anak yatim</a> Tulisan ini memberikan cara menghitung sendiri nilai distribusi F distribusi t dan distribusi r Critical Values of the Pearson Correlation Coeffiecient r dengan menggunakan Microsoft Office Excel Tabel Distribusi F 1. ExcelPada artikel ini akan membahas Cara Menghitung Peluang Distribusi kontinu khusus yaitu Normal dan Eksponensial dengan ExcelUntuk definisi dan lainnya dapat diperoleh dari buku-buku. Kurva distribusi normal adalah sebuah kurva yang bentuknya seperti lonceng oleh karena itu kurva ini sering juga disebut dengan kurva lonceng. Artikel wikiHow ini akan mengajari Anda cara menghitung nilai Z pada Microsoft Excel. Materi Distribusi Normal Hay sahabat semuaPada perjumpaan kali ini kembali akan quippercoid sampaikan pembahasan materi makalah tentang Distribusi Normal. Menghitung Nilai Distribusi F Distribusi t dan Distribusi r dengan Microsoft Office Excel Junaidi Junaidi Staf Pengajar Fakultas Ekonomi dan Bisnis Universitas Jambi Untuk kepentingan pengujian hipotesis dibutuhkan berbagai tabel distribusi statistika sesuai dengan statistik uji nya. menghitung distribusi normal dengan excel.
+							</p>
+	<h3>Ketik rumus ini FINV00538.</h3>
+    <p>
+							<a href="/baca/lirik-lagu-i-lay-my-love-on-you-westlife.html">lirik lagu i lay my love on you westlife</a> Kurva distribusi normal adalah sebuah kurva yang bentuknya seperti lonceng oleh karena itu kurva ini sering juga disebut dengan kurva lonceng. Jika x number_s n trials dan p probability_s maka distribusi binomial kumulatif adalah. Titik tertinggi dari kurva distribusi normal adalah posisi peluang tertinggi untuk terjadi dan peluang tersebut akan bergerak turun menuju sisi kiri dan sisi kanan titik tertinggi dengan besaran yang sama pada jarak yang sama dari titik tertinggi. ExcelPada artikel ini akan membahas Cara Menghitung Peluang Distribusi kontinu khusus yaitu Normal dan Eksponensial dengan ExcelUntuk definisi dan lainnya dapat diperoleh dari buku-buku. Z dan kumulatifArgumen pertama z adalah jumlah deviasi standar dari meanJadi z -15 adalah satu setengah standar deviasi di bawah meanNilai z dari z 2 adalah dua deviasi. menghitung distribusi normal dengan excel.
+							</p>
+	<h3>Untuk ekor kanan apakah tepat untuk hanya menghitung mean dan standar deviasi tambahkan 1 2 3 standar deviasi dari rata-rata untuk membuat rentang kemudian membandingkannya dengan normal 6895 997 untuk distribusi normal.</h3>
+    <p>
+							<a href="/baca/teks-ceramah-ustad-somad.html">teks ceramah ustad somad</a> Agar rumus menunjukkan hasil pilih datanya tekan F2 lalu tekan Enter. Probabilitas Peluang - Pengertian Rumus Tabel Distribusi. TEORI PROBABILITAS KELOMPOK 1 Simpangan Baku - Rumus Cara Menghitung Contoh Soal Makalah Statistik Probabilitas Distribusi Binomial - PDF Document Zuna. Mengembalikan distribusi normal untuk rata-rata dan simpangan baku tertentu. Tulisan ini memberikan cara menghitung sendiri nilai distribusi F distribusi t dan distribusi r Critical Values of the Pearson Correlation Coeffiecient r dengan menggunakan Microsoft Office Excel Tabel Distribusi F 1. menghitung distribusi normal dengan excel.
+							</p>
+		
+<p>Terima kasih telah berkunjung pada website aku. supaya artikel yg awak periksa diatas memberikan untung  pembaca lalu banyak pribadi yang sudah pernah berkunjung di website ini. aku berharap dorongan pada, semua partai  peluasan website ini supaya lebih bagus lalu.</p>
+
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Statistik Untuk Penelitian Skripsi Dan Tesis Menghitung Distribusi Normal Dengan Manual Dan Ms Excel Dalam Statistik" src="http://4.bp.blogspot.com/-jbTyQNkXc4o/Uvuf6G4FrKI/AAAAAAAAAPw/1vTDgbnLLdM/s1600/4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-bWBM85EORWNmF_UpMSPcTxMApvWWdJJiFa4PzUE0Zm82qBr3Zyz5-_un6JwRhyWFgjI';" />
+        <small>Source: statistikskripsitesis.blogspot.com</small>
+                    <p>Dalam artikel ini akan dibahas Cara Menghitung Peluang Distribusi Binomial dan Poisson dengan Ms.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Calculator To Find Probabilities For Normal Distribution Easy Youtube" src="https://i.ytimg.com/vi/bVdQ7OzGvU0/sddefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlH3nePVZKLK22svQCRi5PNS4Zs6ZMCgW-cy5y9UMdyPO8XoTVBPDfueqA5RnXK2jrOPQ';" />
+        <small>Source: www.youtube.com</small>
+                    <p>TEORI PROBABILITAS KELOMPOK 1 Simpangan Baku - Rumus Cara Menghitung Contoh Soal Makalah Statistik Probabilitas Distribusi Binomial - PDF Document Zuna.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tabel Z Tabel Distribusi Z Dan Cara Membaca Distribusi Normal" src="https://rumus.co.id/wp-content/uploads/2019/03/tabel-z.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCbgpmo8CNYY5Oa6J49LKjPIX-F1FX2gI1VQ';" />
+        <small>Source: rumus.co.id</small>
+                    <p>Ketika suatu populasi mengikuti distribusi normal observasi ter-klaster di sekitar rata-rata aritmetiknya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Soal Distribusi Normal Baku Skuylahhu" src="https://image.slidesharecdn.com/distribusinormal-131110012228-phpapp01/95/distribusi-normal-7-638.jpg?cb=1394243565" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-n_MRYSMSN3AuQP-UBLeQ35kaH0Hf2XQMg';" />
+        <small>Source: www.skuylahhu.com</small>
+                    <p>Namun pada perjumpaan sebelumnya yang mana kami juga telah menyampaikan materi tentang Bilangan DesimalNah untuk melengkapi apa yang menjadi pembahasan kita kali ini maka mari simak ulasan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Statistik Untuk Penelitian Skripsi Dan Tesis Menghitung Distribusi Normal Dengan Manual Dan Ms Excel Dalam Statistik" src="http://4.bp.blogspot.com/-WPYoXHLYQyY/Uvugi_g0JcI/AAAAAAAAAQY/uzhvLsdrYzk/s1600/9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlmqgcpBS98d6DCgmAFm5N7vUTCrLQknTrzfWifQAeJoYXFePckyYZTrfhAtmc6k0phAE';" />
+        <small>Source: statistikskripsitesis.blogspot.com</small>
+                    <p>Statistika Statistics pada dasarnya by Jimy.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Contoh Soal Menghitung Distribusi Normal Dengan Skor Z Dan Tabel" src="https://blogkelas.web.id/images/post/5-contoh-menghitung-distribusi-normal-dengan-skor-z-tabel-excel%C2%A0+13082020211858.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZCUUmEmjxsAxOOrm9Ozd12EJfV5HZKyeeYQ';" />
+        <small>Source: blogkelas.web.id</small>
+                    <p>Jika pada artikel sebelumnya telah membahas cara menghitung peluang distribusi diskrit khusus yaitu pada artikel Cara Menghitung Peluang Distribusi Binomial dan Poisson dengan Ms.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Menghitung Luas Area Dengan Menggunakan Tabel Z Distribusi Normal Baku" src="https://cdn.staticaly.com/img/1.bp.blogspot.com/-l5SN47nbD9k/V_KUyC5r85I/AAAAAAAABQk/JEy7LJ9z8J0Pc_rnt3a5MELJuZ7JzkKPgCLcB/s1600/kurva-normal-z-4.PNG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuI2uRKHSA-Cnb5cxoe3hCFw8Mbygtal6k8C1qEHXik1Ia0f_0h9WyNO5JKeaHxeZktuQ';" />
+        <small>Source: www.rumusstatistik.com</small>
+                    <p>Fungsi Excel pertama yang akan kita periksa adalah fungsi NORMSDIST.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Soal Distribusi Normal Baku Skuylahhu" src="https://2.bp.blogspot.com/-qHs7f761f98/WduZxExfoJI/AAAAAAAAAUQ/KUqoZDcvPO4LrlaUPanEX7DY0BiLtBvuwCEwYBhgL/s640/bacatablez.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHtAHzNJsXEOmtbnpRVHbx-70jCf8L0Sm5lA';" />
+        <small>Source: www.skuylahhu.com</small>
+                    <p>TEORI PROBABILITAS KELOMPOK 1 Simpangan Baku - Rumus Cara Menghitung Contoh Soal Makalah Statistik Probabilitas Distribusi Binomial - PDF Document Zuna.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Peluang Distribusi Normal Beserta Contoh Soal Pembahasan Youtube" src="https://i.ytimg.com/vi/iYRD7WBCqOk/sddefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPOAmEcqy9U2m09yykXqcpqsdVsWiDbl6pMlgqQ29Wu_-iZm48k5PuSEjSRvzzFUAl-rM';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Ketika suatu populasi mengikuti distribusi normal observasi ter-klaster di sekitar rata-rata aritmetiknya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tabel Distribusi Normal" src="https://slidetodoc.com/presentation_image/466aa5ed9a0400e884cfccc7d169c048/image-11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD_QclLmMMTTS_ImgxiJxMIQUd90jBEvQyFuyyYJUuwxqOHZG4XzmCxHspZJYEu3FLyuw';" />
+        <small>Source: hotelzodiacobolsena.site</small>
+                    <p>Tulisan ini memberikan cara menghitung sendiri nilai distribusi F distribusi t dan distribusi r Critical Values of the Pearson Correlation Coeffiecient r dengan menggunakan Microsoft Office Excel Tabel Distribusi F 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Kurva Distribusi Normal Dengan Excel" src="https://cdn.staticaly.com/img/1.bp.blogspot.com/-fh-aEVUrI70/YART0g7P-3I/AAAAAAAACx0/ghYhZunVlpIvL03pWL4lX-w1Gmv4EwhlgCLcBGAsYHQ/s0/grafik.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ayHNUvj0yN3fWUfUQlwIDO1pTJdUa1-h1A6wJbY0QebZiSG8TEFCBqUNMhLctZxXWmY';" />
+        <small>Source: www.rumusstatistik.com</small>
+                    <p>Fungsi Excel pertama yang akan kita periksa adalah fungsi NORMSDIST.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Tabel Distribusi Normal Z Negatif Dan Positif Dengan Ms Excel Youtube" src="https://i.ytimg.com/vi/KRSIdHzwBH0/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEGCKQeNUpU7Gk96DtwB4hC_zvDqXCvQR2AA';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Pelajaran statistik tentang distribusi normal biasanya diberikan di bangku kuliah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/baca/cara-membuat-pepes-ikan-lele.html"><i>&larr; cara membuat pepes ikan lele</i></a>
+                                                                    
+                                        <a href="/baca/cara-membuat-pendahuluan-essay.html"><i>cara membuat pendahuluan essay &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<center>
+<script  src="https://pasukan.my.id/ad/footer.js" type="text/javascript" ></script>
+</center>		</center>
+    </main>
+    <footer style="padding-top: 1px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type='text/javascript' src='//inquiryclank.com/a4/6a/e6/a46ae66cc05a3cf9702a5a5b3a0acf74.js'></script>
+
+<script  src="https://pasukan.my.id/ad/popme_indo.js" type="text/javascript" ></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+	<script  src="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-double-ads4.js" ></script>
+	<script  src="https://pasukan.my.id/ad/body.js" type="text/javascript" ></script>
+	
+</body>
+
+</html>
